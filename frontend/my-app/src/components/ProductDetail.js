@@ -16,7 +16,7 @@ const ProductDetail = () => {
   // useEffect hook to fetch product details when the component mounts or when the ID changes
   useEffect(() => {
     // Fetch the product details from the server
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`https://newecom-p2yc.onrender.com/products/${id}`)
       .then((response) => response.json()) // Parse the JSON response
       .then((data) => setProduct(data)) // Update the product state with the fetched data
       .catch((error) => console.error("Error fetching product:", error)); // Handle any errors that occur during the fetch
