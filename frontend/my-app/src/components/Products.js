@@ -11,7 +11,7 @@ const Products = ({ updateCartCount }) => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("https://https://newecom-p2yc.onrender.com/products")
+    fetch("https://newecom-p2yc.onrender.com/products")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
@@ -34,7 +34,7 @@ const Products = ({ updateCartCount }) => {
   };
 
   const addToCart = (productId) => {
-    fetch("https://https://newecom-p2yc.onrender.com/cart", {
+    fetch("https://newecom-p2yc.onrender.com/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
