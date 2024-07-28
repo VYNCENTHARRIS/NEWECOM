@@ -34,7 +34,7 @@ const Contact = () => {
       setErrors(validationErrors); // Set validation errors if there are any
     } else {
       // Send form data to the server
-      fetch("http://localhost:5000/contact", {
+      fetch("https://newecom-p2yc.onrender.com/contact", {
         method: "POST", // Use POST method to send form data
         headers: {
           "Content-Type": "application/json", // Set the content type to JSON
