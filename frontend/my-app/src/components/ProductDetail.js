@@ -25,7 +25,7 @@ const ProductDetail = () => {
   // Function to add the product to the cart
   const addToCart = () => {
     // Send a POST request to add the product to the cart
-    fetch("http://https://newecom-p2yc.onrender.com/cart", {
+    fetch("https://newecom-p2yc.onrender.com/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
