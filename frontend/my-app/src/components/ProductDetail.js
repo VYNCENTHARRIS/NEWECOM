@@ -25,7 +25,7 @@ const ProductDetail = () => {
   // Function to add the product to the cart
   const addToCart = () => {
     // Send a POST request to add the product to the cart
-    fetch("http://localhost:5000/cart", {
+    fetch("http://https://newecom-p2yc.onrender.com/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ const ProductDetail = () => {
       <div className="row">
         <div className="col-md-6">
           <img
-            src={`http://localhost:5000/public/${product.image_url}`} // Display the product image
+            src={`https://newecom-p2yc.onrender.com/public/${product.image_url}`} // Display the product image
             alt={product.name}
             className="img-fluid"
           />

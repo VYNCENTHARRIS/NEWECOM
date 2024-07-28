@@ -4,14 +4,14 @@ const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/cart")
+    fetch("https://newecom-p2yc.onrender.com/cart")
       .then((response) => response.json())
       .then((data) => setCartItems(data))
       .catch((error) => console.error("Error fetching cart items:", error));
   }, []);
 
   const removeFromCart = (productId) => {
-    fetch(`http://localhost:5000/cart/${productId}`, {
+    fetch(`https://newecom-p2yc.onrender.com/cart/${productId}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -33,7 +33,7 @@ const Cart = () => {
           <div key={item.id} className="col-md-4 mb-4">
             <div className="card h-100">
               <img
-                src={`http://localhost:5000/public/${item.image_url}`}
+                src={`https://newecom-p2yc.onrender.com/public/${item.image_url}`}
                 className="card-img-top"
                 alt={item.name}
               />

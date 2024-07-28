@@ -19,7 +19,7 @@ const App = () => {
 
   // Fetch initial cart count from the server when the component mounts
   useEffect(() => {
-    fetch("http://localhost:5000/cart")
+    fetch("https://newecom-p2yc.onrender.com/cart")
       .then((response) => response.json())
       .then((data) => {
         // Set the cart count to the number of items in the cart

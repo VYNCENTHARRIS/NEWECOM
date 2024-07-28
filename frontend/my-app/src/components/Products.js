@@ -11,7 +11,7 @@ const Products = ({ updateCartCount }) => {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://https://newecom-p2yc.onrender.com/products")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
@@ -34,7 +34,7 @@ const Products = ({ updateCartCount }) => {
   };
 
   const addToCart = (productId) => {
-    fetch("http://localhost:5000/cart", {
+    fetch("https://https://newecom-p2yc.onrender.com/cart", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +45,7 @@ const Products = ({ updateCartCount }) => {
       .then((data) => {
         if (data.id) {
           setMessage("Product added to cart");
-          fetch("http://localhost:5000/cart")
+          fetch("https://newecom-p2yc.onrender.com/cart")
             .then((response) => response.json())
             .then((data) => {
               updateCartCount(data.length);
@@ -173,7 +173,7 @@ const Products = ({ updateCartCount }) => {
                 <div className="card h-100">
                   <Link to={`/product/${product.id}`}>
                     <img
-                      src={`http://localhost:5000/public/${product.image_url}`}
+                      src={`https://newecom-p2yc.onrender.com/public/${product.image_url}`}
                       className="card-img-top"
                       alt={product.name}
                     />

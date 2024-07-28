@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch the Olympics products from the server
-    fetch("http://localhost:5000/products?sport=Olympics")
+    fetch("https://newecom-p2yc.onrender.com/products?sport=Olympics")
       .then((response) => response.json())
       .then((data) => setOlympicsProducts(data))
       .catch((error) =>
@@ -21,7 +21,7 @@ const Home = () => {
       <div className="static-img-container">
         <img
           className="static-img"
-          src="http://localhost:5000/public/images/static1.jpg" // Corrected path
+          src="https://newecom-p2yc.onrender.com/public/images/static1.jpg" // Corrected path
           alt="Static Image 1"
         />
         <div className="static-img-caption">
@@ -36,7 +36,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="http://localhost:5000/public/images/baseball.jpg" // Corrected path
+              src="https://newecom-p2yc.onrender.com/public/images/baseball.jpg" // Corrected path
               alt="First slide"
             />
             <Carousel.Caption>
@@ -47,7 +47,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="http://localhost:5000/public/images/mavs.jpg" // Corrected path
+              src="https://newecom-p2yc.onrender.com/public/images/mavs.jpg" // Corrected path
               alt="Second slide"
             />
             <Carousel.Caption>
@@ -58,7 +58,7 @@ const Home = () => {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="http://localhost:5000/public/images/lakers.jpg" // Corrected path
+              src="https://newecom-p2yc.onrender.com/public/images/lakers.jpg" // Corrected path
               alt="Third slide"
             />
             <Carousel.Caption>
@@ -77,7 +77,7 @@ const Home = () => {
                 <Card className="product-card">
                   <Card.Img
                     variant="top"
-                    src={`http://localhost:5000/public/${product.image_url}`}
+                    src={`https://newecom-p2yc.onrender.com/public/${product.image_url}`}
                   />
                   <Card.Body>
                     <Card.Title>{product.name}</Card.Title>
@@ -98,7 +98,7 @@ const Home = () => {
       <div className="static-img-container">
         <img
           className="static-img"
-          src="http://localhost:5000/public/images/static2.jpg" // Corrected path
+          src="https://newecom-p2yc.onrender.com/public/images/static2.jpg" // Corrected path
           alt="Static Image 2"
         />
         <div className="static-img-caption">
