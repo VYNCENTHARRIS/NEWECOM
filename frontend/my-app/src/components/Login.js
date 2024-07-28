@@ -24,7 +24,7 @@ const Login = ({ onLogin }) => {
     }
 
     // Send a POST request to the server to log in the user
-    fetch("http://localhost:5000/login", {
+    fetch("https://newecom-p2yc.onrender.com/login", {
       method: "POST", // Use POST method to send login data
       headers: {
         "Content-Type": "application/json", // Set the content type to JSON
