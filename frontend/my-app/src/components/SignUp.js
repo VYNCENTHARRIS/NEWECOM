@@ -115,7 +115,7 @@ const SignUp = () => {
       return;
     }
 
-    fetch("http://localhost:5000/register", {
+    fetch("https://newecom-front.onrender.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

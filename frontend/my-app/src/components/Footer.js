@@ -74,7 +74,7 @@ const Footer = () => {
               <FaGithub />
             </a>
           </div>
-          <p>&copy; 2024 Redeisned Ecommerce. All rights reserved.</p>
+          <p>&copy; 2024 Redeisgned Ecommerce. All rights reserved.</p>
           <p>Terms of Use | Privacy Policy | Supply Chain</p>
         </div>
       </div>
